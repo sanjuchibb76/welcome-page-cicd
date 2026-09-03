@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'python test_page.py'
+                bat 'sh test_page.sh'
             }
         }
         stage('Done') {
